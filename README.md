@@ -1,4 +1,4 @@
-# 🎬 Movie Night - Movie Discovery Web App
+#  Movie Night - Movie Discovery Web App
 
 A clean, responsive, and beginner-friendly Movie Discovery web application built using fundamental **HTML5**, **CSS3**, and vanilla **JavaScript**. 
 
@@ -6,7 +6,7 @@ Users can browse a curated collection of Hollywood and Bollywood movies, search 
 
 ---
 
-## 🌟 Features
+##  Features
 
 - **Movie Cards Showcase**: Displays movie posters, titles, IMDb ratings, genre badges, and brief plot synopses.
 - **Real-Time Search Bar**: Instantly filters movies as you type letters in the search bar.
@@ -17,7 +17,7 @@ Users can browse a curated collection of Hollywood and Bollywood movies, search 
 
 ---
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 - **HTML5**: Semantic web page markup (`<header>`, `<main>`, `<select>`, `<input>`, `<footer>`).
 - **CSS3**: Custom styling, Flexbox for navigation/controls, CSS Grid for responsive movie cards, and media queries for mobile devices.
@@ -30,7 +30,7 @@ Users can browse a curated collection of Hollywood and Bollywood movies, search 
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```text
 ├── index.html        # Main HTML structure of the application
