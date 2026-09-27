@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Night - Movie Discovery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <h1>🎬 Movie Night</h1>
+    <p>Discover your next favorite movie</p>
+  </header>
+
+  <!-- Controls Section: Search & Genre Filter -->
+  <div class="controls-container">
+    <!-- Search Bar -->
+    <div class="search-box">
+      <input 
+        type="text" 
+        id="searchInput" 
+        placeholder="🔍 Search movie by title..."
+      >
+    </div>
+
+    <!-- Genre Filter Dropdown -->
+    <div class="filter-box">
+      <label for="genreSelect">Filter by Genre: </label>
+      <select id="genreSelect">
+        <option value="All">All Genres</option>
+        <option value="Action">Action</option>
+        <option value="Sci-Fi">Sci-Fi</option>
+        <option value="Drama">Drama</option>
+        <option value="Animation">Animation</option>
+        <option value="Comedy">Comedy</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- Movie Cards Grid Container -->
+  <main class="main-container">
+    <div id="moviesContainer" class="movie-grid">
+      <!-- JavaScript will display movie cards here -->
+    </div>
+
+    <!-- Message shown when no search results match -->
+    <div id="noResults" class="no-results" style="display: none;">
+      <p>😢 No movies found matching your search.</p>
+    </div>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>© Movie Night Project - Built with HTML, CSS, & JavaScript</p>
+  </footer>
+
+  <!-- Link to our JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
