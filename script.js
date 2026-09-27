@@ -1,5 +1,5 @@
 // ========================================================
-// BASIC JAVASCRIPT FOR MOVIE NIGHT (1ST YEAR BEGINNER LEVEL)
+// BASIC JAVASCRIPT FOR MOVIE NIGHT 
 // ========================================================
 
 // 1. Array of movie objects containing movie details
