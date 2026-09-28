@@ -139,24 +139,25 @@ genreSelect.addEventListener("change", filterMovies);
 displayMovies(movies);
 function toggleFavourite(title)
 {
-   let favourite=
+   let favourites =
 JSON.parse(localStorage.getItem(
 "favourites")) || [];
 
     if
-  (favourite.include(title)) {
+  (favourites.includes(title)) {
           favourites=
-  favourite.filter(movie =>
+  favourites.filter(movie =>
   movie !== title);
-          alert(itile + "removed
+          alert(title + " removed
   from favourites");
      } else {
-          favourite.push(title);
+          favourites.push(title);
           alert(title + "added to 
   favourites");
       }
 
-  localStoarge.setItem("favourites", JSON.stringify(favourites));
+  localStorage.setItem("favourites
+  ", JSON.stringify(favourites));
   }
   function toggleWatchlist(title)
   {
@@ -165,11 +166,11 @@ JSON.parse(localStorage.getItem(
   "watchlist")) || [];
 
       if
-  (watchlist.include(title)) {
+  (watchlist.includes(title)) {
              watchlist =
   watchlist.filter(movie =>
   movie !== title);
-          alert(title + "removed
+          alert(title + " removed
   from watchlist");
        } else {
             watchlist.push(title);
