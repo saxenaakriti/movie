@@ -1,6 +1,8 @@
 // ========================================================
 // BASIC JAVASCRIPT FOR MOVIE NIGHT 
 // ========================================================
+let favourites=JSON.parse(localStorage.getItem("favourites")) || [];
+let watchlist= JSON.parse(localStorage.getItem("watchlist")) || [];
 
 // 1. Array of movie objects containing movie details
 const movies = [
@@ -82,9 +84,20 @@ function displayMovies(movieList) {
           <span class="movie-rating">★ ${movie.rating}</span>
           <span class="movie-genre">${movie.genre}</span>
         </div>
-        <p class="movie-description">${movie.description}</p>
+        <p class="movie-description">$
+        {movie.description}</p>
+            <div class="movie-actions">
+                 <button
+      onclick="toggleFavourite('$
+      {movie.title}')"> Favourite</
+      button>
+           <button
+      onclick="toggleWatchlist('$
+      {movie.title}')"> Watchlist</
+      button>
       </div>
-    `;
+      </div>';
+    
 
     // Add this card into the movies container
     moviesContainer.appendChild(card);
@@ -124,3 +137,47 @@ genreSelect.addEventListener("change", filterMovies);
 
 // 6. Display all movies initially when the page first loads
 displayMovies(movies);
+function toggleFavourite(title)
+{
+   let favourite=
+JSON.parse(localStorage.getItem(
+"favourites")) || [];
+
+    if
+  (favourite.include(title)) {
+          favourites=
+  favourite.filter(movie =>
+  movie !== title);
+          alert(itile + "removed
+  from favourites");
+     } else {
+          favourite.push(title);
+          alert(title + "added to 
+  favourites");
+      }
+
+  localStoarge.setItem("favourites", JSON.stringify(favourites));
+  }
+  function toggleWatchlist(title)
+  {
+     let watchlist =
+  JSON.parse(localStorage.getItem(
+  "watchlist")) || [];
+
+      if
+  (watchlist.include(title)) {
+             watchlist =
+  watchlist.filter(movie =>
+  movie !== title);
+          alert(title + "removed
+  from watchlist");
+       } else {
+            watchlist.push(title);
+            alert(title + "added to 
+  watchlist");
+      }
+
+  localStoarge.setItem("watchlist"
+  , JSON.stringify(watchlist));
+  }
+            
