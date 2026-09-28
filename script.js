@@ -43,7 +43,7 @@ const movies = [
     title: "Dangal",
     genre: "Drama",
     rating: 8.3,
-    poster:"https://www.tallengestore.com/products/dangal-bollywood-cult-aamir-khan-classic-hindi-movie-poster-large-art-prints?srsltid=AU7gw4WTK1k3X0sk3uWpFYS3bqlNcB2yfTcGcO-IvK8e8cx9fGsdpo04",
+    poster:"dangal.jpg",
     description: "An ex-wrestler trains his two daughters to become world-class wrestling champions against all social odds."
   }
 ];
