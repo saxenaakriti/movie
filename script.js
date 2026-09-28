@@ -11,56 +11,56 @@ const movies = [
     genre: "Sci-Fi",
     rating: 8.7,
     poster: "https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=600&q=80",
-    description: "The Matrix (1999) is a science-fiction action movie about Neo, a computer hacker who discovers that the world he knows is actually a simulated reality called the Matrix. He joins a group of rebels led by Morpheus and fights to uncover the truth and free humanity."
+    description:"The Matrix (1999) is a science-fiction action movie about Neo, a computer hacker who discovers that the world he knows is actually a simulated reality called the Matrix. He joins a group of rebels led by Morpheus and fights to uncover the truth and free humanity."
   },
   {
     title: "LA LA LAND",
     genre: "Romance",
     rating: 8.0,
     poster: "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=600&q=80",
-    description: "La La Land (2016) is a romantic musical about Mia, an aspiring actress, and Sebastian, a passionate jazz pianist. As they pursue their dreams in Los Angeles, they fall in love while facing challenges that test their relationship and ambitions."
+    description:"La La Land (2016) is a romantic musical about Mia, an aspiring actress, and Sebastian, a passionate jazz pianist. As they pursue their dreams in Los Angeles, they fall in love while facing challenges that test their relationship and ambitions."
   },
   {
     title: "BRUCE ALMIGHTY",
     genre: "Comedy",
     rating: 6.8,
     poster: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=600&q=80",
-    description: "Bruce Almighty (2003) is a comedy movie about Bruce, a frustrated TV reporter who is given God’s powers for a short time. At first, he uses them for personal gain, but he eventually learns important lessons about responsibility, life, and helping others."
+    description:"Bruce Almighty (2003) is a comedy movie about Bruce, a frustrated TV reporter who is given God’s powers for a short time. At first, he uses them for personal gain, but he eventually learns important lessons about responsibility, life, and helping others."
   },
   {
     title: "INCEPTION",
     genre: "Thriller",
     rating: 8.8,
     poster: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=600&q=80",
-    description: "Inception (2010) is a thriller about Dom Cobb, a skilled thief who enters people’s dreams to steal information. He is given a difficult mission to plant an idea in someone’s mind, leading to a complex journey through multiple layers of dreams."
+    description:"Inception (2010) is a thriller about Dom Cobb, a skilled thief who enters people’s dreams to steal information. He is given a difficult mission to plant an idea in someone’s mind, leading to a complex journey through multiple layers of dreams."
   },
   {
     title: "IT",
     genre: "Horror",
     rating: 7.3,
     poster: "https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=600&q=80",
-    description: "IT (2017) is a horror movie about a group of children who face a terrifying creature called Pennywise, which appears as a clown. As children in their town mysteriously disappear, the group must overcome their fears and stand together against Pennywise."
+    description:"IT (2017) is a horror movie about a group of children who face a terrifying creature called Pennywise, which appears as a clown. As children in their town mysteriously disappear, the group must overcome their fears and stand together against Pennywise."
   },
   {
     title: "FAST AND FURIOUS",
     genre: "Action",
     rating: 7.3,
     poster:"images/dangal.jpg",
-    description: "Fast & Furious (2009) is an action movie about Dominic Toretto and Brian O’Conner, who become involved in an undercover mission involving dangerous criminals and illegal street racing. The movie combines fast cars, intense action, friendship, and loyalty."
+    description:"Fast & Furious (2009) is an action movie about Dominic Toretto and Brian O’Conner, who become involved in an undercover mission involving dangerous criminals and illegal street racing. The movie combines fast cars, intense action, friendship, and loyalty."
   },
   {
    title: "THE DARK KNIGHT",
     genre: "superhero",
     rating: 9.1,
     poster:"images/dangal.jpg",
-    description: "The Dark Knight (2008) is a superhero crime thriller about Batman as he faces the Joker, a dangerous criminal who creates chaos in Gotham City. With the help of allies like Commissioner Gordon and Harvey Dent, Batman must confront difficult choices while trying to protect the city."
+    description:"The Dark Knight (2008) is a superhero crime thriller about Batman as he faces the Joker, a dangerous criminal who creates chaos in Gotham City. With the help of allies like Commissioner Gordon and Harvey Dent, Batman must confront difficult choices while trying to protect the city."
   },
   {
      title: "KUNG FU PANDA",
     genre: "Animation",
     rating: 7.6,
     poster:"images/dangal.jpg",
-    description: "Kung Fu Panda (2008) is an animated comedy about Po, a clumsy but determined panda who dreams of becoming a kung fu master. When he is unexpectedly chosen as the Dragon Warrior, he trains with the Furious Five and learns to believe in himself."
+    description:"Kung Fu Panda (2008) is an animated comedy about Po, a clumsy but determined panda who dreams of becoming a kung fu master. When he is unexpectedly chosen as the Dragon Warrior, he trains with the Furious Five and learns to believe in himself."
   },
   ];
 
