@@ -17,7 +17,7 @@ const movies = [
     title: "LA LA LAND",
     genre: "Romance",
     rating: 8.0,
-    poster: "images/la la land .jpg",
+    poster: "images/la la land.jpg",
     description:"La La Land (2016) is a romantic musical about Mia, an aspiring actress, and Sebastian, a passionate jazz pianist. As they pursue their dreams in Los Angeles, they fall in love while facing challenges that test their relationship and ambitions."
   },
   {
