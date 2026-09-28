@@ -148,12 +148,10 @@ JSON.parse(localStorage.getItem(
           favourites=
   favourites.filter(movie =>
   movie !== title);
-          alert(title + " removed
-  from favourites");
+          alert(title + " removed from favourites");
      } else {
           favourites.push(title);
-          alert(title + "added to 
-  favourites");
+          alert(title + "added to favourites");
       }
 
   localStorage.setItem("favourites
@@ -170,15 +168,13 @@ JSON.parse(localStorage.getItem(
              watchlist =
   watchlist.filter(movie =>
   movie !== title);
-          alert(title + " removed
-  from watchlist");
+          alert(title + " removed from watchlist");
        } else {
             watchlist.push(title);
-            alert(title + "added to 
-  watchlist");
+            alert(title + " added to watchlist");
       }
 
-  localStoarge.setItem("watchlist"
+  localStorage.setItem("watchlist"
   , JSON.stringify(watchlist));
   }
             
