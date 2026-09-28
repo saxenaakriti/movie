@@ -50,7 +50,7 @@ const movies = [
   },
   {
    title: "THE DARK KNIGHT",
-    genre: "superhero",
+    genre: "Superhero",
     rating: 9.1,
     poster:"images/the dark knight.jpg",
     description:"The Dark Knight (2008) is a superhero crime thriller about Batman as he faces the Joker, a dangerous criminal who creates chaos in Gotham City. With the help of allies like Commissioner Gordon and Harvey Dent, Batman must confront difficult choices while trying to protect the city."
