@@ -43,7 +43,7 @@ const movies = [
     title: "Dangal",
     genre: "Drama",
     rating: 8.3,
-    poster:"dangal.jpg",
+    poster:"images/dangal.jpg",
     description: "An ex-wrestler trains his two daughters to become world-class wrestling champions against all social odds."
   }
 ];
