@@ -58,10 +58,8 @@ const noResults = document.getElementById("noResults");
 
 // 3. Function to display movies on the webpage
 function displayMovies(movieList) {
-  // Clear any existing movies in the container
   moviesContainer.innerHTML = "";
 
-  // Check if the list is empty
   if (movieList.length === 0) {
     noResults.style.display = "block";
     return;
@@ -69,40 +67,47 @@ function displayMovies(movieList) {
     noResults.style.display = "none";
   }
 
-  // Loop through each movie in the array and create its HTML card
   movieList.forEach(function (movie) {
-    // Create card div
+
     const card = document.createElement("div");
     card.className = "movie-card";
 
-    // Set the HTML inside the card
     card.innerHTML = `
       <img src="${movie.poster}" alt="${movie.title} Poster">
+
       <div class="movie-info">
+
         <h3 class="movie-title">${movie.title}</h3>
+
         <div class="movie-meta">
           <span class="movie-rating">★ ${movie.rating}</span>
           <span class="movie-genre">${movie.genre}</span>
         </div>
-        <p class="movie-description">$
-        {movie.description}</p>
-            <div class="movie-actions">
-                 <button
-      onclick="toggleFavourite('$
-      {movie.title}')"> Favourite</
-      button>
-           <button
-      onclick="toggleWatchlist('$
-      {movie.title}')"> Watchlist</
-      button>
-      </div>
-      </div>';
-    
 
-    // Add this card into the movies container
+        <p class="movie-description">${movie.description}</p>
+
+        <div class="movie-actions">
+
+          <button onclick="toggleFavourite('${movie.title}')">
+            Favourite
+          </button>
+
+          <button onclick="toggleWatchlist('${movie.title}')">
+            Watchlist
+          </button>
+
+        </div>
+
+      </div>
+    `;
+
     moviesContainer.appendChild(card);
   });
 }
+
+    
+
+    
 
 // 4. Function to filter movies by Search Title AND Genre
 function filterMovies() {
@@ -140,41 +145,31 @@ displayMovies(movies);
 function toggleFavourite(title)
 {
    let favourites =
-JSON.parse(localStorage.getItem(
-"favourites")) || [];
+JSON.parse(localStorage.getItem("favourites")) || [];
 
-    if
-  (favourites.includes(title)) {
-          favourites=
-  favourites.filter(movie =>
-  movie !== title);
+    if (favourites.includes(title)) {
+          favourites = favourites.filter(movie => movie !== title);
           alert(title + " removed from favourites");
      } else {
           favourites.push(title);
           alert(title + "added to favourites");
       }
 
-  localStorage.setItem("favourites
-  ", JSON.stringify(favourites));
+  localStorage.setItem("favourites", JSON.stringify(favourites));
   }
   function toggleWatchlist(title)
   {
      let watchlist =
-  JSON.parse(localStorage.getItem(
-  "watchlist")) || [];
+  JSON.parse(localStorage.getItem("watchlist")) || [];
 
-      if
-  (watchlist.includes(title)) {
-             watchlist =
-  watchlist.filter(movie =>
-  movie !== title);
+      if (watchlist.includes(title)) {
+             watchlist = watchlist.filter(movie => movie !== title);
           alert(title + " removed from watchlist");
        } else {
             watchlist.push(title);
             alert(title + " added to watchlist");
       }
 
-  localStorage.setItem("watchlist"
-  , JSON.stringify(watchlist));
+  localStorage.setItem("watchlist", JSON.stringify(watchlist));
   }
             
