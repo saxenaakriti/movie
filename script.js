@@ -39,8 +39,7 @@ const movies = [
     genre: "Horror",
     rating: 7.3,
     poster: "https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=600&q=80",
-    description: "IT (2017) is a horror movie about a group of children who face a terrifying creature called Pennywise, which appears as a clown. As children in their town mysteriously disappear, the group must overcome their fears and stand together against Pennywise.
-"
+    description: "IT (2017) is a horror movie about a group of children who face a terrifying creature called Pennywise, which appears as a clown. As children in their town mysteriously disappear, the group must overcome their fears and stand together against Pennywise."
   },
   {
     title: "FAST AND FURIOUS",
@@ -55,7 +54,7 @@ const movies = [
     rating: 9.1,
     poster:"images/dangal.jpg",
     description: "The Dark Knight (2008) is a superhero crime thriller about Batman as he faces the Joker, a dangerous criminal who creates chaos in Gotham City. With the help of allies like Commissioner Gordon and Harvey Dent, Batman must confront difficult choices while trying to protect the city."
-},
+  },
   {
      title: "KUNG FU PANDA",
     genre: "Animation",
@@ -63,7 +62,7 @@ const movies = [
     poster:"images/dangal.jpg",
     description: "Kung Fu Panda (2008) is an animated comedy about Po, a clumsy but determined panda who dreams of becoming a kung fu master. When he is unexpectedly chosen as the Dragon Warrior, he trains with the Furious Five and learns to believe in himself."
   },
-];
+  ];
 
 // 2. Getting references to HTML elements using document.getElementById
 const moviesContainer = document.getElementById("moviesContainer");
@@ -167,7 +166,7 @@ JSON.parse(localStorage.getItem("favourites")) || [];
           alert(title + " removed from favourites");
      } else {
           favourites.push(title);
-          alert(title + "added to favourites");
+          alert(title + " added to favourites");
       }
 
   localStorage.setItem("favourites", JSON.stringify(favourites));
