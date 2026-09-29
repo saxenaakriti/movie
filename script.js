@@ -186,4 +186,8 @@ JSON.parse(localStorage.getItem("favourites")) || [];
 
   localStorage.setItem("watchlist", JSON.stringify(watchlist));
   }
+const themetoggle = document.getelementById("themetoggle");
+themeToggle.addEventListener("click", function() { document.body.classList.toggle("dark-mode");
+});
+
             
