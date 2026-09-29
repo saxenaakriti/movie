@@ -238,5 +238,9 @@ function openMovieModal(movie) {
 
     document.getElementById("movieModal").style.display = "flex";
 }
+// Close movie details popup
+document.getElementById("closeModal").addEventListener("click", function () {
+    document.getElementById("movieModal").style.display = "none";
+});
 
             
