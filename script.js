@@ -191,7 +191,7 @@ document.getElementById("showAllMovies").addEventListener("click", function () {
 
 
 
-// 6. Display all movies initially when the page first loads
+// 6. Display all movies initially 
 displayMovies(movies);
 function toggleFavourite(title)
 {
