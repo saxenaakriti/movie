@@ -104,7 +104,7 @@ function displayMovies(movieList) {
         <div class="movie-actions">
 
           <button class="action-btn favourite-btn" onclick="toggleFavourite('${movie.title}')">
-            <span class="action-icon>♡</span>
+            <span class="action-icon">♡</span>
              Favourite
           </button>
 
