@@ -245,6 +245,72 @@ footer {
     gap: 20px;
   }
 }
+/* Favourite & Watchlist buttons */
+
+.movie-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.action-btn {
+    flex: 1;
+    padding: 10px 12px;
+    border-radius: 10px;
+    border: 1px solid #444;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+
+    transition: all 0.25s ease;
+}
+
+.favourite-btn {
+    background: #292929;
+    color: white;
+}
+
+.favourite-btn:hover {
+    background: #e63956;
+    border-color: #e63956;
+    transform: translateY(-2px);
+}
+
+.watchlist-btn {
+    background: #292929;
+    color: white;
+}
+
+.watchlist-btn:hover {
+    background: #5c55d9;
+    border-color: #5c55d9;
+    transform: translateY(-2px);
+}
+
+.action-icon {
+    font-size: 17px;
+}
+
+.favourite-btn.active {
+    background: #e63956;
+    border-color: #e63956;
+    color: white;
+}
+
+.watchlist-btn.active {
+    background: #5c55d9;
+    border-color: #5c55d9;
+    color: white;
+}
+
+.action-btn:active {
+    transform: scale(0.96);
+}
 
 
 
