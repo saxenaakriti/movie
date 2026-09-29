@@ -86,14 +86,13 @@ function displayMovies(movieList) {
 
     const card = document.createElement("div");
     card.className = "movie-card";
-    const card = document.createElement("div");
-card.className = "movie-card";
+    
 
 card.addEventListener("click", function () {
     openMovieModal(movie);
 });
 
-card.innerHTML = `
+
 
     card.innerHTML = `
       <img src="${movie.poster}" alt="${movie.title} Poster">
