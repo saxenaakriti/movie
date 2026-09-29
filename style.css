@@ -245,3 +245,34 @@ footer {
     gap: 20px;
   }
 }
+/* Dark Mode Toggle*/
+.Controls{
+   display: flex;
+   align-items: centre;
+   width: 100%;
+   gap: 20px;
+}
+.theme-toggle{
+   margin-left: auto;
+   display: flex;
+   align-items: center:
+   gap: 8px;
+   padding: 9px 15px;
+   border-radius: 25px;
+   background: linear-gradient(135deg, #292929, #111111);
+   color: white;
+   border: 1px solid #555;
+   cursor: pointer;
+   font-size: 14px;
+   font-weight: bold;
+   box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+   transition: 0.3s;
+}
+.theme-toggle:hover{
+   transform: scale(1.05);
+   box-shadow: 0 5px 18px rgba(255,255,255,0.2);
+}
+.theme-icon {
+   font-size: 18px;
+}
+   
