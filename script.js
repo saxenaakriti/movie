@@ -114,6 +114,7 @@ function displayMovies(movieList) {
           </button>
 
         </div>
+      </div>
 
       
     `;
