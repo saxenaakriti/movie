@@ -103,11 +103,13 @@ function displayMovies(movieList) {
 
         <div class="movie-actions">
 
-          <button onclick="toggleFavourite('${movie.title}')">
-            Favourite
+          <button class="action-btn favourite-btn" onclick="toggleFavourite('${movie.title}')">
+            <span class="action-icon>♡</span>
+             Favourite
           </button>
 
-          <button onclick="toggleWatchlist('${movie.title}')">
+          <button class="action-btn watchlist-btn" onclick="toggleWatchlist('${movie.title)')">
+                  <span class="actions-icon">🔖</span>
             Watchlist
           </button>
 
