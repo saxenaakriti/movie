@@ -151,18 +151,52 @@ function filterMovies() {
 }
 
 // 5. Add Event Listeners for User Actions
-// When user types in search input
+
+// Search movies
 searchInput.addEventListener("input", filterMovies);
 
-// When user changes the genre dropdown
+// Filter by genre
 genreSelect.addEventListener("change", filterMovies);
+
+
+// My Favourites button
+document.getElementById("showFavourites").addEventListener("click", function () {
+
+  let favouriteMovies = movies.filter(function (movie) {
+    return favourites.includes(movie.title);
+  });
+
+  displayMovies(favouriteMovies);
+});
+
+
+// My Watchlist button
+document.getElementById("showWatchlist").addEventListener("click", function () {
+
+  let watchlistMovies = movies.filter(function (movie) {
+    return watchlist.includes(movie.title);
+  });
+
+  displayMovies(watchlistMovies);
+});
+
+
+// All Movies button
+document.getElementById("showAllMovies").addEventListener("click", function () {
+
+  displayMovies(movies);
+
+});
+
+
+// 6. Display all movies initially
+displayMovies(movies);
 
 // 6. Display all movies initially when the page first loads
 displayMovies(movies);
 function toggleFavourite(title)
 {
-   let favourites =
-JSON.parse(localStorage.getItem("favourites")) || [];
+   
 
     if (favourites.includes(title)) {
           favourites = favourites.filter(movie => movie !== title);
@@ -176,10 +210,7 @@ JSON.parse(localStorage.getItem("favourites")) || [];
   }
   function toggleWatchlist(title)
   {
-     let watchlist =
-  JSON.parse(localStorage.getItem("watchlist")) || [];
-
-      if (watchlist.includes(title)) {
+    if (watchlist.includes(title)) {
              watchlist = watchlist.filter(movie => movie !== title);
           alert(title + " removed from watchlist");
        } else {
