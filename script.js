@@ -1,8 +1,7 @@
 // ========================================================
 // BASIC JAVASCRIPT FOR MOVIE NIGHT 
 // ========================================================
-document.addEventListener(DOMcontentLoaded", function() 
-{
+
 let favourites=JSON.parse(localStorage.getItem("favourites")) || [];
 let watchlist= JSON.parse(localStorage.getItem("watchlist")) || [];
 
@@ -188,9 +187,7 @@ JSON.parse(localStorage.getItem("favourites")) || [];
 
   localStorage.setItem("watchlist", JSON.stringify(watchlist));
   }
-const themetoggle = document.getelementById("themetoggle");
-themeToggle.addEventListener("click", function() { document.body.classList.toggle("dark-mode");
-});
+
 
 });
 
