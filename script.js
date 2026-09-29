@@ -227,6 +227,16 @@ function toggleFavourite(title)
 
   localStorage.setItem("watchlist", JSON.stringify(watchlist));
   }
+// Open movie details popup
+function openMovieModal(movie) {
 
+    document.getElementById("modalPoster").src = movie.poster;
+    document.getElementById("modalTitle").textContent = movie.title;
+    document.getElementById("modalRating").textContent = "★ " + movie.rating;
+    document.getElementById("modalGenre").textContent = movie.genre;
+    document.getElementById("modalDescription").textContent = movie.description;
+
+    document.getElementById("movieModal").style.display = "flex";
+}
 
             
