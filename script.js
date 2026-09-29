@@ -189,8 +189,7 @@ document.getElementById("showAllMovies").addEventListener("click", function () {
 });
 
 
-// 6. Display all movies initially
-displayMovies(movies);
+
 
 // 6. Display all movies initially when the page first loads
 displayMovies(movies);
