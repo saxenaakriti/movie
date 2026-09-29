@@ -189,6 +189,4 @@ JSON.parse(localStorage.getItem("favourites")) || [];
   }
 
 
-});
-
             
