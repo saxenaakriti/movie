@@ -115,7 +115,7 @@ function displayMovies(movieList) {
 
         </div>
 
-      </div>
+      
     `;
 
     moviesContainer.appendChild(card);
